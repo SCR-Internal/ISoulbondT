@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:16.17.0-slim
 
 WORKDIR /app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 9000:9001
+EXPOSE 7500:7501
 
 CMD ["npm", "start"]
